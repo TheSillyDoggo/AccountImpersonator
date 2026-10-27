@@ -39,6 +39,8 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
+          bindings: 'TheSillyDoggo/bindings'
+          bindings-ref: '22081fix'
           combine: true
           target: ${{ matrix.config.target }}
 
