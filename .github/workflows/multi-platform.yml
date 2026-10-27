@@ -40,7 +40,8 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           bindings: 'TheSillyDoggo/bindings'
-          bindings-ref: '22081fix'
+          bindings-ref: '22081fix2'
+          configure-args: '-DSKIP_BUILDING_CODEGEN=OFF'
           combine: true
           target: ${{ matrix.config.target }}
 
